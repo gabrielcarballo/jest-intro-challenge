@@ -13,17 +13,19 @@
 
   Comportamento:
   myCounter() // Retorna: [0, 2, 3, 1, 2, 3, 2, 2, 3, 3, 2, 3];
-*/
+*/   /*  +2 +1 -2 +1 +1 -1 +0 +1 +0 -1 +1 */
 
 const myCounter = () => {
   var myArray = [];
   for (var counter = 0; counter <= 3; counter += 1) {
     myArray.push(counter);
-    for (var counter = 2; counter <= 3; counter += 1) {
-      myArray.push(counter);
+    for (var cantHandleAnymore = 2; cantHandleAnymore <= 3; cantHandleAnymore += 1) {
+      myArray.push(cantHandleAnymore);
     }
   }
+  console.log(myArray)
   return myArray;
+  ;
 };
 
 module.exports = myCounter;
