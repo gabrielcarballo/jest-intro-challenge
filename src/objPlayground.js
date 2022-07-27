@@ -54,7 +54,6 @@ const arrayGenerator = (type, object) => {
   if (type === 'values') {
     return Object.values(object);
   }
-  return 
 };
 
 module.exports = { calculator, arrayGenerator };
