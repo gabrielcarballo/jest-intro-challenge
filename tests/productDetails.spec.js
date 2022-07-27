@@ -53,12 +53,9 @@ describe("6 - Implemente os casos de teste para a função `productDetails`", ()
   });
 
   it("Teste se os dois productIds terminam com 123", () => {
-    const id = Object.values(productDetails()[1]);
-    const id1 = Object.values(id[1]);
-    const place = id1.length;
-    expect(id1[place - 1]).toMatch("3");
-    expect(id1[place - 2]).toMatch("2");
-    expect(id1[place - 3]).toMatch("1");
+    const teste = productDetails("teste", "teste1");
+    expect(teste[0].details.productId.slice(-3)).toBe("123");
+    expect(teste[0].details.productId.slice(-3)).toBe("123");
   });
 });
 // ESCREVA SEUS TESTES ABAIXO:
