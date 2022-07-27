@@ -35,17 +35,26 @@
 */
 
 const calculator = (number1, number2) => {
-  return {
+  const answer = {
     sum: number1 + number2,
     mult: number1 * number2,
     div: Math.floor(number1 / number2),
     sub: number1 - number2,
   };
+  return answer;
 };
 
 const arrayGenerator = (type, object) => {
-  const teste = `Object.${type}(${object})`;
-  return teste;
+  if (type === 'keys') {
+    return Object.keys(object);
+  }
+  if (type === 'entries') {
+    return Object.entries(object);
+  }
+  if (type === 'values') {
+    return Object.values(object);
+  }
+  return 
 };
 
 module.exports = { calculator, arrayGenerator };
