@@ -1,4 +1,4 @@
-# My Bootcamp Project
+# Test-Driven Development Project
 
 This project is a demonstration of my skills in JavaScript, learned at my bootcamp. It includes various functions and unit tests to ensure their correct operation.
 
